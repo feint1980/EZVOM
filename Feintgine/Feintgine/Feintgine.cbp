@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Feintgine" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Feintgine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Debug/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Linker>
+					<Add option="-lglut" />
+					<Add option="-lGLU" />
+					<Add option="-lGL" />
+					<Add option="-lopengl32" />
+					<Add option="-lglut32" />
+					<Add option="-GL" />
+					<Add option="-lSDL2" />
+					<Add option="-lSDL2main" />
+					<Add library="../deps/lib/libCEGUIBase-0.so" />
+					<Add library="../deps/lib/libCEGUIOpenGLRenderer-0.so" />
+					<Add library="../deps/lib/libGLEW.a" />
+					<Add library="../deps/lib/libSDL2.a" />
+					<Add library="../deps/lib/libSDL2main.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Feintgine" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="" />
+				<Option object_output="obj/Release/" />
+				<Option type="2" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wall" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++98" />
+			<Add directory="../deps/include" />
+			<Add directory="include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lGL" />
+			<Add option="-lGLU" />
+			<Add option="-lglut" />
+			<Add library="../deps/lib/libCEGUIBase-0.so" />
+			<Add library="../deps/lib/libCEGUIOpenGLRenderer-0.so" />
+			<Add library="../deps/lib/libGLEW.a" />
+			<Add library="../deps/lib/libSDL2.a" />
+			<Add library="../deps/lib/libSDL2main.a" />
+		</Linker>
+		<Unit filename="include/Camera2D.h" />
+		<Unit filename="include/DebugRender.h" />
+		<Unit filename="include/Error.h" />
+		<Unit filename="include/Feintgine.h" />
+		<Unit filename="include/GLSLProgram.h" />
+		<Unit filename="include/GLTexture.h" />
+		<Unit filename="include/GUI.h" />
+		<Unit filename="include/IGameScreen.h" />
+		<Unit filename="include/IMainGame.h" />
+		<Unit filename="include/IOManager.h" />
+		<Unit filename="include/ImageLoader.h" />
+		<Unit filename="include/InputManager.h" />
+		<Unit filename="include/ResourceManager.h" />
+		<Unit filename="include/ScreenList.h" />
+		<Unit filename="include/SpriteBatch.h" />
+		<Unit filename="include/TextureCache.h" />
+		<Unit filename="include/Timing.h" />
+		<Unit filename="include/Vector2.h" />
+		<Unit filename="include/Vertex.h" />
+		<Unit filename="include/Window.h" />
+		<Unit filename="include/feint_common.h" />
+		<Unit filename="include/picoPNG.h" />
+		<Unit filename="src/Camera2D.cpp" />
+		<Unit filename="src/DebugRender.cpp" />
+		<Unit filename="src/Error.cpp" />
+		<Unit filename="src/Feintgine.cpp" />
+		<Unit filename="src/GLSLProgram.cpp" />
+		<Unit filename="src/GUI.cpp" />
+		<Unit filename="src/IGameScreen.cpp" />
+		<Unit filename="src/IMainGame.cpp" />
+		<Unit filename="src/IOManager.cpp" />
+		<Unit filename="src/ImageLoader.cpp" />
+		<Unit filename="src/InputManager.cpp" />
+		<Unit filename="src/ResourceManager.cpp" />
+		<Unit filename="src/ScreenList.cpp" />
+		<Unit filename="src/SpriteBatch.cpp" />
+		<Unit filename="src/TextureCache.cpp" />
+		<Unit filename="src/Timing.cpp" />
+		<Unit filename="src/Window.cpp" />
+		<Unit filename="src/feint_common.cpp" />
+		<Unit filename="src/picoPNG.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
