@@ -1,2 +1,2 @@
 # EZVOM
-an ez app that show detail of volate capture by a python app, yeah you could call it EZVOM 
+An program for raspberry pi 3B that display signal from VOM (Volt-Ohm-Milliammeter)
